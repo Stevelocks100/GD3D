@@ -29,14 +29,14 @@ public class Main {
         frame.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
 
         if (System.getProperty("os.name").toLowerCase().contains("windows")) {
-            frame.setSize(540, 450);
+            frame.setSize(900, 900);
             frame.setLayout(new FlowLayout(FlowLayout.LEFT, 8, 8));
             Font font = new Font(Font.DIALOG, Font.BOLD, 11);
             frame.setFont(font);
 
             frame.setTitle("GD3D - Open source 3d model importer for Geometry dash");
         } else {
-            frame.setSize(530, 425);
+            frame.setSize(900, 900);
         }
 
         frame.setLocation(Toolkit.getDefaultToolkit().getScreenSize().width/2-frame.getSize().width/2, Toolkit.getDefaultToolkit().getScreenSize().height/2-frame.getSize().height/2);
@@ -112,9 +112,9 @@ public class Main {
             try {
                 JFrame about1 = About.about();
                 if (System.getProperty("os.name").toLowerCase().contains("windows")) {
-                    about1.setSize(350, 400);
+                    about1.setSize(900, 900);
                 } else {
-                    about1.setSize(350, 365);
+                    about1.setSize(900, 900);
                 }
                 about1.setIconImage(jFrame.getIconImage());
                 about1.setLocation(Toolkit.getDefaultToolkit().getScreenSize().width/2- about1.getSize().width/2, Toolkit.getDefaultToolkit().getScreenSize().height/2- about1.getSize().height/2);
